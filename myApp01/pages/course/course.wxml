@@ -1,0 +1,15 @@
+<!--course.wxml-->
+<view class="page">
+  <view class="all-cost">
+     <view class="item"  wx:for="{{bellePath}}" bindtap="toType"  wx:key="{{index}}" data-name="{{item.title}}" data-id="{{item.id}}">
+        <view class="item-box">
+        	<image src="{{item.imgPath}}" mode="widthFix" ></image>
+          <view class="name">{{item.title}}</view>
+        </view>
+     </view>
+ 
+  </view>
+
+
+
+</view>

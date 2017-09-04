@@ -1,0 +1,37 @@
+<!--index.wxml-->
+<view class="page">
+  <!-- 滚动  -->
+ <scroll-view scroll-y="true" style="height: {{windowHeight}}px; width: {{windowWidth}}px;"
+ bindscrolltoupper="pullUpLoad" bindscrolltolower="pullDownRefresh"
+  bindscroll="scroll" scroll-into-view="{{toView}}" 
+ lower-threshold="50" scroll-top="{{scrollTop}}">
+    <!--轮播图  -->
+    <swiper class="banner" indicator-dots="true" indicator-color="rgba(255, 255,255, .7)"circular="true">
+      <block wx:for="{{imgPath}}" wx:key="{{index}}">
+      <swiper-item>
+        <image src="{{item}}"></image>
+      </swiper-item>
+      </block>
+    </swiper>
+
+    <view class="content-a">
+      <view class="learn ">
+        <view class="title iconfont icon-course">最新花边</view>
+        <view class="learn-box" >
+            <view class="item"  wx:for="{{msgList}}"  wx:key="{{index}}" data-name="{{item.title}}"  >
+              <image src="{{item.picUrl}}"></image>
+              <view class="name">{{item.title}}</view>
+              <view class="cost">{{item.ctime}}</view>
+            </view>
+        </view>
+      </view>
+    </view> 
+ </scroll-view>
+  <view>  
+    <loading hidden="{{hidden}}" bindchange="loadingChange">  
+    加载中...  
+    </loading>  
+  </view>  
+
+</view>
+

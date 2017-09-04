@@ -1,0 +1,24 @@
+/* belleType.wxss */
+.belles{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.belles .belle-box{
+   padding:10rpx 3%;
+ width: 94%;
+ display:flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+}
+.belles .belle-box .item{
+   width: 100%;
+    height: auto;overflow: hidden;
+    margin-bottom: 40rpx;
+}
+.belles .belle-box .item image{
+  display: block;
+   /* height: 340rpx; */
+  width: 100%; 
+  /* border: 2rpx solid  */
+}

@@ -1,0 +1,12 @@
+<!--belleDetail.wxml-->
+<view class="page">
+   <view class="belles">
+     <view class="belle-box" >
+        <view class="item" wx:for="{{belleDetailData}}" wx:key="{{index}}">
+             <image src="{{item}}" mode="widthFix"></image>
+        </view>
+     </view>
+   </view>
+
+
+</view>

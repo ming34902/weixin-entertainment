@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/course/course",
+    "pages/me/me",
+    "pages/component/courseDetail/belleDetail",
+    "pages/component/courseList/belleType"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "rgba(46,203,112,0.8)",
+    "navigationBarTitleText": "娱乐花边",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#011",
+    "selectedColor": "rgba(46,203,112,0.8)",
+    "backgroundColor": "#fefefe",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath": "./lib/images/icon/home.png",
+        "selectedIconPath": "./lib/images/icon/s_home.png"
+      },
+      {
+        "pagePath": "pages/course/course",
+        "text": "美女图集",
+        "iconPath": "./lib/images/icon/dingdan.png",
+        "selectedIconPath": "./lib/images/icon/s_dingdan.png"
+      }
+    ]
+  }
+}

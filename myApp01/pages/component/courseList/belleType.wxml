@@ -1,0 +1,15 @@
+<!--belleType.wxml-->
+<view class="page">
+   <view class="belles">
+     <view class="belle-box" >
+        <view class="item" bindtap="toDetail" data-name="{{item.title}}" data-id="{{item.id}}"wx:for="{{belleTypeData}}" wx:key="{{index}}">
+            <view class="item-box">
+              <image src="{{item.imgPath}}" mode="widthFix"></image>
+              <view class="name">{{item.title}}</view>
+            </view>
+        </view>
+     </view>
+   </view>
+
+
+</view>
